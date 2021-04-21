@@ -1,41 +1,44 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>exoscale package &mdash; python-exoscale 2020-12-07 documentation</title>
+  <title>exoscale package &mdash; python-exoscale 2021-04-21 documentation</title>
   
-
-  
-  
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="exoscale.api package" href="exoscale.api.html" />
     <link rel="prev" title="API" href="modules.html" /> 
@@ -65,7 +68,7 @@
             
             
               <div class="version">
-                2020-12-07
+                2021-04-21
               </div>
             
           
@@ -82,6 +85,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -108,6 +112,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -142,11 +147,13 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="modules.html">API</a> &raquo;</li>
         
@@ -155,7 +162,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/exoscale.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -180,6 +187,7 @@
 <li class="toctree-l3"><a class="reference internal" href="exoscale.api.compute.html">exoscale.api.compute module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exoscale.api.dns.html">exoscale.api.dns module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exoscale.api.iam.html">exoscale.api.iam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exoscale.api.polling.html">exoscale.api.polling module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exoscale.api.runstatus.html">exoscale.api.runstatus module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exoscale.api.storage.html">exoscale.api.storage module</a></li>
 </ul>
@@ -192,21 +200,21 @@
 </div>
 <div class="section" id="module-exoscale">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-exoscale" title="Permalink to this headline">¶</a></h2>
-<dl class="exception">
+<dl class="py exception">
 <dt id="exoscale.ConfigurationError">
-<em class="property">exception </em><code class="sig-prename descclassname">exoscale.</code><code class="sig-name descname">ConfigurationError</code><a class="headerlink" href="#exoscale.ConfigurationError" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.</span></code><code class="sig-name descname"><span class="pre">ConfigurationError</span></code><a class="headerlink" href="#exoscale.ConfigurationError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>A generic configuration error.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.ConfigurationError.reason">
-<code class="sig-name descname">reason</code><em class="property"> = _CountingAttr(counter=244, _default=NOTHING, repr=True, eq=True, order=True, hash=None, init=True, metadata={})</em><a class="headerlink" href="#exoscale.ConfigurationError.reason" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">reason</span></code><em class="property"> <span class="pre">=</span> <span class="pre">_CountingAttr(counter=245,</span> <span class="pre">_default=NOTHING,</span> <span class="pre">repr=True,</span> <span class="pre">eq=True,</span> <span class="pre">order=True,</span> <span class="pre">hash=None,</span> <span class="pre">init=True,</span> <span class="pre">on_setattr=None,</span> <span class="pre">metadata={})</span></em><a class="headerlink" href="#exoscale.ConfigurationError.reason" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="exoscale.Exoscale">
-<em class="property">class </em><code class="sig-prename descclassname">exoscale.</code><code class="sig-name descname">Exoscale</code><span class="sig-paren">(</span><em class="sig-param">config_file=None</em>, <em class="sig-param">profile=None</em>, <em class="sig-param">api_key=None</em>, <em class="sig-param">api_secret=None</em>, <em class="sig-param">compute_api_endpoint=None</em>, <em class="sig-param">dns_api_endpoint=None</em>, <em class="sig-param">storage_api_endpoint=None</em>, <em class="sig-param">storage_zone=None</em>, <em class="sig-param">runstatus_api_endpoint=None</em>, <em class="sig-param">iam_api_endpoint=None</em>, <em class="sig-param">max_retries=3</em>, <em class="sig-param">trace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.Exoscale" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.</span></code><code class="sig-name descname"><span class="pre">Exoscale</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">profile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_secret</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compute_api_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dns_api_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storage_api_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storage_zone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runstatus_api_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iam_api_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.Exoscale" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>An Exoscale API client.</p>
 <dl class="field-list simple">
@@ -227,9 +235,9 @@
 </ul>
 </dd>
 </dl>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.Exoscale.api_key">
-<code class="sig-name descname">api_key</code><a class="headerlink" href="#exoscale.Exoscale.api_key" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">api_key</span></code><a class="headerlink" href="#exoscale.Exoscale.api_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>the Exoscale client API key</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -238,9 +246,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.Exoscale.api_secret">
-<code class="sig-name descname">api_secret</code><a class="headerlink" href="#exoscale.Exoscale.api_secret" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">api_secret</span></code><a class="headerlink" href="#exoscale.Exoscale.api_secret" title="Permalink to this definition">¶</a></dt>
 <dd><p>the Exoscale client API secret</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -249,9 +257,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.Exoscale.compute">
-<code class="sig-name descname">compute</code><a class="headerlink" href="#exoscale.Exoscale.compute" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">compute</span></code><a class="headerlink" href="#exoscale.Exoscale.compute" title="Permalink to this definition">¶</a></dt>
 <dd><p>the Exoscale Compute API client</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -260,9 +268,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.Exoscale.dns">
-<code class="sig-name descname">dns</code><a class="headerlink" href="#exoscale.Exoscale.dns" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">dns</span></code><a class="headerlink" href="#exoscale.Exoscale.dns" title="Permalink to this definition">¶</a></dt>
 <dd><p>the Exoscale DNS API client</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -271,9 +279,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.Exoscale.storage">
-<code class="sig-name descname">storage</code><a class="headerlink" href="#exoscale.Exoscale.storage" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">storage</span></code><a class="headerlink" href="#exoscale.Exoscale.storage" title="Permalink to this definition">¶</a></dt>
 <dd><p>the Exoscale Object Storage API client</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -282,9 +290,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.Exoscale.runstatus">
-<code class="sig-name descname">runstatus</code><a class="headerlink" href="#exoscale.Exoscale.runstatus" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">runstatus</span></code><a class="headerlink" href="#exoscale.Exoscale.runstatus" title="Permalink to this definition">¶</a></dt>
 <dd><p>the Exoscale Runstatus API client</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -293,9 +301,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.Exoscale.iam">
-<code class="sig-name descname">iam</code><a class="headerlink" href="#exoscale.Exoscale.iam" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">iam</span></code><a class="headerlink" href="#exoscale.Exoscale.iam" title="Permalink to this definition">¶</a></dt>
 <dd><p>the Exoscale IAM API client</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -314,29 +322,29 @@
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="exoscale.api.html" class="btn btn-neutral float-right" title="exoscale.api package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="modules.html" class="btn btn-neutral float-left" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="exoscale.api.html" class="btn btn-neutral float-right" title="exoscale.api package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="modules.html" class="btn btn-neutral float-left" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018-2020, The Exoscale team
+        &#169; Copyright 2018-2021, The Exoscale team.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -344,7 +352,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

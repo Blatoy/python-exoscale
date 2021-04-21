@@ -1,44 +1,47 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>exoscale.api.runstatus module &mdash; python-exoscale 2020-12-07 documentation</title>
+  <title>exoscale.api.runstatus module &mdash; python-exoscale 2021-04-21 documentation</title>
   
-
-  
-  
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="exoscale.api.storage module" href="exoscale.api.storage.html" />
-    <link rel="prev" title="exoscale.api.iam module" href="exoscale.api.iam.html" /> 
+    <link rel="prev" title="exoscale.api.polling module" href="exoscale.api.polling.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -65,7 +68,7 @@
             
             
               <div class="version">
-                2020-12-07
+                2021-04-21
               </div>
             
           
@@ -82,6 +85,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -108,6 +112,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -142,11 +147,13 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="modules.html">API</a> &raquo;</li>
         
@@ -159,7 +166,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/exoscale.api.runstatus.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -176,14 +183,14 @@
   <div class="section" id="module-exoscale.api.runstatus">
 <span id="exoscale-api-runstatus-module"></span><h1>exoscale.api.runstatus module<a class="headerlink" href="#module-exoscale.api.runstatus" title="Permalink to this headline">¶</a></h1>
 <p>This submodule represents the Exoscale Runstatus API.</p>
-<dl class="class">
+<dl class="py class">
 <dt id="exoscale.api.runstatus.Incident">
-<em class="property">class </em><code class="sig-prename descclassname">exoscale.api.runstatus.</code><code class="sig-name descname">Incident</code><span class="sig-paren">(</span><em class="sig-param">runstatus</em>, <em class="sig-param">res</em>, <em class="sig-param">id</em>, <em class="sig-param">page</em>, <em class="sig-param">state</em>, <em class="sig-param">status</em>, <em class="sig-param">start_date</em>, <em class="sig-param">end_date=None</em>, <em class="sig-param">title=None</em>, <em class="sig-param">services=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Incident" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.runstatus.</span></code><code class="sig-name descname"><span class="pre">Incident</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runstatus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">services</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Incident" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.Resource" title="exoscale.api.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.Resource</span></code></a></p>
 <p>A Runstatus incident.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Incident.id">
-<code class="sig-name descname">id</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.id" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.id" title="Permalink to this definition">¶</a></dt>
 <dd><p>the incident unique identifier</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -192,9 +199,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Incident.title">
-<code class="sig-name descname">title</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.title" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">title</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.title" title="Permalink to this definition">¶</a></dt>
 <dd><p>a incident title</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -203,9 +210,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Incident.start_date">
-<code class="sig-name descname">start_date</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.start_date" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">start_date</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.start_date" title="Permalink to this definition">¶</a></dt>
 <dd><p>the incident start date</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -214,9 +221,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Incident.end_date">
-<code class="sig-name descname">end_date</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.end_date" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">end_date</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.end_date" title="Permalink to this definition">¶</a></dt>
 <dd><p>the incident end date</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -225,9 +232,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Incident.services">
-<code class="sig-name descname">services</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.services" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">services</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.services" title="Permalink to this definition">¶</a></dt>
 <dd><p>a list of services impacted by the incident</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -236,9 +243,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Incident.state">
-<code class="sig-name descname">state</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.state" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">state</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>the incident state</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -247,9 +254,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Incident.status">
-<code class="sig-name descname">status</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.status" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">status</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.status" title="Permalink to this definition">¶</a></dt>
 <dd><p>the incident status</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -258,9 +265,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Incident.page">
-<code class="sig-name descname">page</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.page" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">page</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.page" title="Permalink to this definition">¶</a></dt>
 <dd><p>the page the incident belongs to</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -269,9 +276,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Incident.add_event">
-<code class="sig-name descname">add_event</code><span class="sig-paren">(</span><em class="sig-param">description</em>, <em class="sig-param">state=None</em>, <em class="sig-param">status=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Incident.add_event" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">add_event</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Incident.add_event" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update the incident event stream.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -287,9 +294,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Incident.close">
-<code class="sig-name descname">close</code><span class="sig-paren">(</span><em class="sig-param">description</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Incident.close" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">close</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">description</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Incident.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Close the incident.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -301,9 +308,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Incident.events">
-<em class="property">property </em><code class="sig-name descname">events</code><a class="headerlink" href="#exoscale.api.runstatus.Incident.events" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">events</span></code><a class="headerlink" href="#exoscale.api.runstatus.Incident.events" title="Permalink to this definition">¶</a></dt>
 <dd><p>Incident event stream.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Yields</dt>
@@ -317,9 +324,9 @@ latency.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Incident.update">
-<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">title=None</em>, <em class="sig-param">services=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Incident.update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">services</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Incident.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update the incident properties.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -336,14 +343,14 @@ latency.</p>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="exoscale.api.runstatus.IncidentEvent">
-<em class="property">class </em><code class="sig-prename descclassname">exoscale.api.runstatus.</code><code class="sig-name descname">IncidentEvent</code><span class="sig-paren">(</span><em class="sig-param">runstatus</em>, <em class="sig-param">res</em>, <em class="sig-param">date</em>, <em class="sig-param">description</em>, <em class="sig-param">status</em>, <em class="sig-param">state</em>, <em class="sig-param">incident</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.runstatus.</span></code><code class="sig-name descname"><span class="pre">IncidentEvent</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runstatus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">incident</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.Resource" title="exoscale.api.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.Resource</span></code></a></p>
 <p>A Runstatus incident event.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.IncidentEvent.date">
-<code class="sig-name descname">date</code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.date" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">date</span></code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.date" title="Permalink to this definition">¶</a></dt>
 <dd><p>the event date</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -352,9 +359,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.IncidentEvent.description">
-<code class="sig-name descname">description</code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.description" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">description</span></code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.description" title="Permalink to this definition">¶</a></dt>
 <dd><p>the event description</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -363,9 +370,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.IncidentEvent.status">
-<code class="sig-name descname">status</code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.status" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">status</span></code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.status" title="Permalink to this definition">¶</a></dt>
 <dd><p>the target status for the incident</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -374,9 +381,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.IncidentEvent.state">
-<code class="sig-name descname">state</code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.state" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">state</span></code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>the target state for the services impacted</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -385,9 +392,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.IncidentEvent.incident">
-<code class="sig-name descname">incident</code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.incident" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">incident</span></code><a class="headerlink" href="#exoscale.api.runstatus.IncidentEvent.incident" title="Permalink to this definition">¶</a></dt>
 <dd><p>the incident the event belongs to</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -398,14 +405,14 @@ latency.</p>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="exoscale.api.runstatus.Maintenance">
-<em class="property">class </em><code class="sig-prename descclassname">exoscale.api.runstatus.</code><code class="sig-name descname">Maintenance</code><span class="sig-paren">(</span><em class="sig-param">runstatus</em>, <em class="sig-param">res</em>, <em class="sig-param">id</em>, <em class="sig-param">page</em>, <em class="sig-param">status</em>, <em class="sig-param">start_date</em>, <em class="sig-param">end_date</em>, <em class="sig-param">title=None</em>, <em class="sig-param">description=None</em>, <em class="sig-param">services=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Maintenance" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.runstatus.</span></code><code class="sig-name descname"><span class="pre">Maintenance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runstatus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">services</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Maintenance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.Resource" title="exoscale.api.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.Resource</span></code></a></p>
 <p>A Runstatus maintenance.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Maintenance.id">
-<code class="sig-name descname">id</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.id" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.id" title="Permalink to this definition">¶</a></dt>
 <dd><p>the maintenance unique identifier</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -414,9 +421,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Maintenance.title">
-<code class="sig-name descname">title</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.title" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">title</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.title" title="Permalink to this definition">¶</a></dt>
 <dd><p>a maintenance title</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -425,9 +432,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Maintenance.description">
-<code class="sig-name descname">description</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.description" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">description</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.description" title="Permalink to this definition">¶</a></dt>
 <dd><p>a maintenance description</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -436,9 +443,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Maintenance.services">
-<code class="sig-name descname">services</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.services" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">services</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.services" title="Permalink to this definition">¶</a></dt>
 <dd><p>a list of services impacted by the maintenance</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -447,9 +454,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Maintenance.start_date">
-<code class="sig-name descname">start_date</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.start_date" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">start_date</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.start_date" title="Permalink to this definition">¶</a></dt>
 <dd><p>a maintenance start date</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -458,9 +465,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Maintenance.end_date">
-<code class="sig-name descname">end_date</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.end_date" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">end_date</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.end_date" title="Permalink to this definition">¶</a></dt>
 <dd><p>a maintenance end date</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -469,9 +476,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Maintenance.status">
-<code class="sig-name descname">status</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.status" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">status</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.status" title="Permalink to this definition">¶</a></dt>
 <dd><p>the maintenance status</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -480,9 +487,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Maintenance.page">
-<code class="sig-name descname">page</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.page" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">page</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.page" title="Permalink to this definition">¶</a></dt>
 <dd><p>the page the maintenance belongs to</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -491,9 +498,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Maintenance.add_event">
-<code class="sig-name descname">add_event</code><span class="sig-paren">(</span><em class="sig-param">description</em>, <em class="sig-param">status=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.add_event" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">add_event</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.add_event" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update the maintenance event stream.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -508,9 +515,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Maintenance.close">
-<code class="sig-name descname">close</code><span class="sig-paren">(</span><em class="sig-param">description</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.close" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">close</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">description</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Close the maintenance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -522,9 +529,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Maintenance.events">
-<em class="property">property </em><code class="sig-name descname">events</code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.events" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">events</span></code><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.events" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maintenance event stream.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Yields</dt>
@@ -538,9 +545,9 @@ latency.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Maintenance.update">
-<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">title=None</em>, <em class="sig-param">description=None</em>, <em class="sig-param">start_date=None</em>, <em class="sig-param">end_date=None</em>, <em class="sig-param">services=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">services</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Maintenance.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update the maintenance properties.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -560,14 +567,14 @@ latency.</p>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="exoscale.api.runstatus.MaintenanceEvent">
-<em class="property">class </em><code class="sig-prename descclassname">exoscale.api.runstatus.</code><code class="sig-name descname">MaintenanceEvent</code><span class="sig-paren">(</span><em class="sig-param">runstatus</em>, <em class="sig-param">res</em>, <em class="sig-param">date</em>, <em class="sig-param">description</em>, <em class="sig-param">status</em>, <em class="sig-param">maintenance</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.runstatus.</span></code><code class="sig-name descname"><span class="pre">MaintenanceEvent</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runstatus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maintenance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.Resource" title="exoscale.api.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.Resource</span></code></a></p>
 <p>A Runstatus maintenance event.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.MaintenanceEvent.date">
-<code class="sig-name descname">date</code><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent.date" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">date</span></code><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent.date" title="Permalink to this definition">¶</a></dt>
 <dd><p>the event date</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -576,9 +583,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.MaintenanceEvent.description">
-<code class="sig-name descname">description</code><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent.description" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">description</span></code><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent.description" title="Permalink to this definition">¶</a></dt>
 <dd><p>the event description</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -587,9 +594,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.MaintenanceEvent.status">
-<code class="sig-name descname">status</code><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent.status" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">status</span></code><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent.status" title="Permalink to this definition">¶</a></dt>
 <dd><p>the target status for the maintenance</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -598,9 +605,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.MaintenanceEvent.maintenance">
-<code class="sig-name descname">maintenance</code><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent.maintenance" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">maintenance</span></code><a class="headerlink" href="#exoscale.api.runstatus.MaintenanceEvent.maintenance" title="Permalink to this definition">¶</a></dt>
 <dd><p>the maintenance the event belongs to</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -611,14 +618,14 @@ latency.</p>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="exoscale.api.runstatus.Page">
-<em class="property">class </em><code class="sig-prename descclassname">exoscale.api.runstatus.</code><code class="sig-name descname">Page</code><span class="sig-paren">(</span><em class="sig-param">runstatus</em>, <em class="sig-param">res</em>, <em class="sig-param">id</em>, <em class="sig-param">name</em>, <em class="sig-param">title=None</em>, <em class="sig-param">default_status_message=None</em>, <em class="sig-param">custom_domain=None</em>, <em class="sig-param">time_zone=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.runstatus.</span></code><code class="sig-name descname"><span class="pre">Page</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runstatus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_status_message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_zone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.Resource" title="exoscale.api.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.Resource</span></code></a></p>
 <p>A Runstatus page.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Page.id">
-<code class="sig-name descname">id</code><a class="headerlink" href="#exoscale.api.runstatus.Page.id" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.id" title="Permalink to this definition">¶</a></dt>
 <dd><p>the page unique identifier</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -627,9 +634,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Page.name">
-<code class="sig-name descname">name</code><a class="headerlink" href="#exoscale.api.runstatus.Page.name" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>the page name</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -638,9 +645,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Page.title">
-<code class="sig-name descname">title</code><a class="headerlink" href="#exoscale.api.runstatus.Page.title" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">title</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.title" title="Permalink to this definition">¶</a></dt>
 <dd><p>a page title</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -649,9 +656,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Page.default_status_message">
-<code class="sig-name descname">default_status_message</code><a class="headerlink" href="#exoscale.api.runstatus.Page.default_status_message" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">default_status_message</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.default_status_message" title="Permalink to this definition">¶</a></dt>
 <dd><p>a default “OK” status message</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -660,9 +667,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Page.custom_domain">
-<code class="sig-name descname">custom_domain</code><a class="headerlink" href="#exoscale.api.runstatus.Page.custom_domain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">custom_domain</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.custom_domain" title="Permalink to this definition">¶</a></dt>
 <dd><p>a custom page domain name</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -671,9 +678,9 @@ latency.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Page.time_zone">
-<code class="sig-name descname">time_zone</code><a class="headerlink" href="#exoscale.api.runstatus.Page.time_zone" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">time_zone</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.time_zone" title="Permalink to this definition">¶</a></dt>
 <dd><p>a time zone</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -687,9 +694,9 @@ latency.</p>
 <p>The expected time zone format is the tz database (a.k.a “tzdata” or “Olson”
 database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_database">https://en.wikipedia.org/wiki/Tz_database</a></p>
 </div>
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Page.add_incident">
-<code class="sig-name descname">add_incident</code><span class="sig-paren">(</span><em class="sig-param">title</em>, <em class="sig-param">description</em>, <em class="sig-param">state</em>, <em class="sig-param">status</em>, <em class="sig-param">services=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.add_incident" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">add_incident</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">services</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.add_incident" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open a new incident.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -707,9 +714,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Page.add_maintenance">
-<code class="sig-name descname">add_maintenance</code><span class="sig-paren">(</span><em class="sig-param">title</em>, <em class="sig-param">description</em>, <em class="sig-param">start_date</em>, <em class="sig-param">end_date</em>, <em class="sig-param">services=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.add_maintenance" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">add_maintenance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">services</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.add_maintenance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open a new maintenance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -727,9 +734,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Page.add_service">
-<code class="sig-name descname">add_service</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.add_service" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">add_service</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.add_service" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a service to the page.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -741,9 +748,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Page.delete">
-<code class="sig-name descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.delete" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">delete</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Delete the page.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -752,9 +759,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Page.incidents">
-<em class="property">property </em><code class="sig-name descname">incidents</code><a class="headerlink" href="#exoscale.api.runstatus.Page.incidents" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">incidents</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.incidents" title="Permalink to this definition">¶</a></dt>
 <dd><p>Page incidents.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Yields</dt>
@@ -768,9 +775,9 @@ latency.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Page.maintenances">
-<em class="property">property </em><code class="sig-name descname">maintenances</code><a class="headerlink" href="#exoscale.api.runstatus.Page.maintenances" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">maintenances</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.maintenances" title="Permalink to this definition">¶</a></dt>
 <dd><p>Page maintenance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Yields</dt>
@@ -784,9 +791,9 @@ latency.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Page.services">
-<em class="property">property </em><code class="sig-name descname">services</code><a class="headerlink" href="#exoscale.api.runstatus.Page.services" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">services</span></code><a class="headerlink" href="#exoscale.api.runstatus.Page.services" title="Permalink to this definition">¶</a></dt>
 <dd><p>Page services.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Yields</dt>
@@ -800,9 +807,9 @@ latency.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Page.update">
-<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">title=None</em>, <em class="sig-param">default_status_message=None</em>, <em class="sig-param">custom_domain=None</em>, <em class="sig-param">time_zone=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_status_message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_zone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Page.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update the page properties.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -826,9 +833,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="exoscale.api.runstatus.RunstatusAPI">
-<em class="property">class </em><code class="sig-prename descclassname">exoscale.api.runstatus.</code><code class="sig-name descname">RunstatusAPI</code><span class="sig-paren">(</span><em class="sig-param">key</em>, <em class="sig-param">secret</em>, <em class="sig-param">endpoint='https://api.runstatus.com'</em>, <em class="sig-param">max_retries=None</em>, <em class="sig-param">trace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.RunstatusAPI" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.runstatus.</span></code><code class="sig-name descname"><span class="pre">RunstatusAPI</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secret</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'https://api.runstatus.com'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.RunstatusAPI" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.API" title="exoscale.api.API"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.API</span></code></a></p>
 <p>An Exoscale Runstatus API client.</p>
 <dl class="field-list simple">
@@ -842,9 +849,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </ul>
 </dd>
 </dl>
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.RunstatusAPI.create_page">
-<code class="sig-name descname">create_page</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.RunstatusAPI.create_page" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">create_page</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.RunstatusAPI.create_page" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a Runstatus page.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -859,9 +866,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.RunstatusAPI.get_page">
-<code class="sig-name descname">get_page</code><span class="sig-paren">(</span><em class="sig-param">name=None</em>, <em class="sig-param">id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.RunstatusAPI.get_page" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">get_page</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.RunstatusAPI.get_page" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a Runstatus page.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -879,9 +886,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.RunstatusAPI.list_pages">
-<code class="sig-name descname">list_pages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.RunstatusAPI.list_pages" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">list_pages</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.RunstatusAPI.list_pages" title="Permalink to this definition">¶</a></dt>
 <dd><p>List Runstatus pages.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Yields</dt>
@@ -892,14 +899,14 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="exoscale.api.runstatus.Service">
-<em class="property">class </em><code class="sig-prename descclassname">exoscale.api.runstatus.</code><code class="sig-name descname">Service</code><span class="sig-paren">(</span><em class="sig-param">runstatus</em>, <em class="sig-param">res</em>, <em class="sig-param">id</em>, <em class="sig-param">name</em>, <em class="sig-param">page</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Service" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.runstatus.</span></code><code class="sig-name descname"><span class="pre">Service</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runstatus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Service" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.Resource" title="exoscale.api.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.Resource</span></code></a></p>
 <p>A Runstatus service.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Service.id">
-<code class="sig-name descname">id</code><a class="headerlink" href="#exoscale.api.runstatus.Service.id" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#exoscale.api.runstatus.Service.id" title="Permalink to this definition">¶</a></dt>
 <dd><p>the service unique identifier</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -908,9 +915,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Service.name">
-<code class="sig-name descname">name</code><a class="headerlink" href="#exoscale.api.runstatus.Service.name" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#exoscale.api.runstatus.Service.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>the service name</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -919,9 +926,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="exoscale.api.runstatus.Service.page">
-<code class="sig-name descname">page</code><a class="headerlink" href="#exoscale.api.runstatus.Service.page" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">page</span></code><a class="headerlink" href="#exoscale.api.runstatus.Service.page" title="Permalink to this definition">¶</a></dt>
 <dd><p>the page the incident belongs to</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -930,9 +937,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Service.delete">
-<code class="sig-name descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Service.delete" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">delete</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.Service.delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Delete the service.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -941,9 +948,9 @@ database): <a class="reference external" href="https://en.wikipedia.org/wiki/Tz_
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="exoscale.api.runstatus.Service.state">
-<em class="property">property </em><code class="sig-name descname">state</code><a class="headerlink" href="#exoscale.api.runstatus.Service.state" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">state</span></code><a class="headerlink" href="#exoscale.api.runstatus.Service.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>Service state.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -962,9 +969,9 @@ latency.</p>
 
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="exoscale.api.runstatus.rstime_to_datetime">
-<code class="sig-prename descclassname">exoscale.api.runstatus.</code><code class="sig-name descname">rstime_to_datetime</code><span class="sig-paren">(</span><em class="sig-param">rstime</em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.rstime_to_datetime" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">exoscale.api.runstatus.</span></code><code class="sig-name descname"><span class="pre">rstime_to_datetime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rstime</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.runstatus.rstime_to_datetime" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parses a Runstatus API timestamp and returns the corresponding datetime object.</p>
 </dd></dl>
 
@@ -975,29 +982,29 @@ latency.</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="exoscale.api.storage.html" class="btn btn-neutral float-right" title="exoscale.api.storage module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="exoscale.api.iam.html" class="btn btn-neutral float-left" title="exoscale.api.iam module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="exoscale.api.storage.html" class="btn btn-neutral float-right" title="exoscale.api.storage module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exoscale.api.polling.html" class="btn btn-neutral float-left" title="exoscale.api.polling module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018-2020, The Exoscale team
+        &#169; Copyright 2018-2021, The Exoscale team.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -1005,7 +1012,6 @@ latency.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

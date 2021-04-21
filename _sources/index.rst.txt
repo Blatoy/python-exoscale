@@ -19,6 +19,57 @@ with high-level Python bindings.
 Changelog
 ---------
 
+0.6.0 (2021-04-21)
+~~~~~~~~~~~~~~~~~~
+
+Features
+********
+
+- compute: the ``SecurityGroup.update()`` now updates the Compute instance Security
+  Groups membership live without requiring to stop the instance
+- compute: add ``Instance.user_data`` property
+- compute: add ``InstanceTemplate.boot_mode`` attribute
+- dns: ``create_dns_record()`` now returns the created record
+
+Fixes
+*****
+
+- compute: don't crash when an Instance Template doesn't have details metadata
+
+
+0.5.2 (2021-04-13)
+~~~~~~~~~~~~~~~~~~
+
+Fixes
+*****
+
+- compute: add missing `bootmode` parameter to `register_instance_template()` (#32)
+
+
+0.5.1 (2021-03-16)
+~~~~~~~~~~~~~~~~~~
+
+Fixes
+*****
+
+- Exclude tests from Python packaging
+
+
+0.5.0 (2021-03-15)
+~~~~~~~~~~~~~~~~~~
+
+Features
+********
+
+- compute: add Anti-Affinity Groups support to Instance Pools (#27)
+
+Fixes
+*****
+
+- Rely on pathlib for home lookup (#29)
+- compute: don't crash when listing instances generated from templates (#28)
+
+
 0.4.0 (2020-12-07)
 ~~~~~~~~~~~~~~~~~~
 

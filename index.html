@@ -1,41 +1,44 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>python-exoscale library documentation &mdash; python-exoscale 2020-12-07 documentation</title>
+  <title>python-exoscale library documentation &mdash; python-exoscale 2021-04-21 documentation</title>
   
-
-  
-  
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Configuration" href="configuration.html" /> 
 </head>
@@ -64,7 +67,7 @@
             
             
               <div class="version">
-                2020-12-07
+                2021-04-21
               </div>
             
           
@@ -81,6 +84,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -97,6 +101,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -131,18 +136,20 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
       <li>python-exoscale library documentation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -187,6 +194,7 @@ with high-level Python bindings.</p>
 <li class="toctree-l6"><a class="reference internal" href="exoscale.api.compute.html">exoscale.api.compute module</a></li>
 <li class="toctree-l6"><a class="reference internal" href="exoscale.api.dns.html">exoscale.api.dns module</a></li>
 <li class="toctree-l6"><a class="reference internal" href="exoscale.api.iam.html">exoscale.api.iam module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="exoscale.api.polling.html">exoscale.api.polling module</a></li>
 <li class="toctree-l6"><a class="reference internal" href="exoscale.api.runstatus.html">exoscale.api.runstatus module</a></li>
 <li class="toctree-l6"><a class="reference internal" href="exoscale.api.storage.html">exoscale.api.storage module</a></li>
 </ul>
@@ -206,9 +214,62 @@ with high-level Python bindings.</p>
 <div class="section" id="changelog">
 <h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id1">
-<h3>0.4.0 (2020-12-07)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>0.6.0 (2021-04-21)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="features">
 <h4>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>compute: the <code class="docutils literal notranslate"><span class="pre">SecurityGroup.update()</span></code> now updates the Compute instance Security
+Groups membership live without requiring to stop the instance</p></li>
+<li><p>compute: add <code class="docutils literal notranslate"><span class="pre">Instance.user_data</span></code> property</p></li>
+<li><p>compute: add <code class="docutils literal notranslate"><span class="pre">InstanceTemplate.boot_mode</span></code> attribute</p></li>
+<li><p>dns: <code class="docutils literal notranslate"><span class="pre">create_dns_record()</span></code> now returns the created record</p></li>
+</ul>
+</div>
+<div class="section" id="fixes">
+<h4>Fixes<a class="headerlink" href="#fixes" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>compute: don’t crash when an Instance Template doesn’t have details metadata</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>0.5.2 (2021-04-13)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h4>Fixes<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>compute: add missing <cite>bootmode</cite> parameter to <cite>register_instance_template()</cite> (#32)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>0.5.1 (2021-03-16)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h4>Fixes<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Exclude tests from Python packaging</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>0.5.0 (2021-03-15)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h4>Features<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>compute: add Anti-Affinity Groups support to Instance Pools (#27)</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h4>Fixes<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Rely on pathlib for home lookup (#29)</p></li>
+<li><p>compute: don’t crash when listing instances generated from templates (#28)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>0.4.0 (2020-12-07)<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id10">
+<h4>Features<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>compute: add support for Network Load Balancers</p></li>
 <li><p>compute: add support for Elastic IP HTTPS health checking</p></li>
@@ -222,16 +283,16 @@ with high-level Python bindings.</p>
 </ul>
 </div>
 </div>
-<div class="section" id="id2">
-<h3>0.3.0 (2020-01-22)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h3>0.3.0 (2020-01-22)<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="new">
 <h4>New<a class="headerlink" href="#new" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Add support for IAM (<code class="docutils literal notranslate"><span class="pre">iam</span></code> submodule)</p></li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h4>Features<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id12">
+<h4>Features<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Allow HTTP session retry policy to be user configurable</p></li>
 <li><p>compute: add support for Instance Pools</p></li>
@@ -239,30 +300,30 @@ with high-level Python bindings.</p>
 <li><p>compute: add Instance <code class="docutils literal notranslate"><span class="pre">creation_date</span></code> attribute</p></li>
 </ul>
 </div>
-<div class="section" id="fixes">
-<h4>Fixes<a class="headerlink" href="#fixes" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id13">
+<h4>Fixes<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>storage: fix failing integration tests</p></li>
 <li><p>storage: honor global client settings</p></li>
 </ul>
 </div>
 </div>
-<div class="section" id="id4">
-<h3>0.2.0 (2019-10-09)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id5">
-<h4>Features<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id14">
+<h3>0.2.0 (2019-10-09)<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h4>Features<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>storage: add Bucket/BucketFile <code class="docutils literal notranslate"><span class="pre">url</span></code> attribute</p></li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h4>Fixes<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id16">
+<h4>Fixes<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>compute: fix unhandled exception in <code class="docutils literal notranslate"><span class="pre">get_*</span></code> functions</p></li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h4>Changes<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id17">
+<h4>Changes<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>compute: <code class="docutils literal notranslate"><span class="pre">create_instance()</span></code> function <em>root_disk_size</em> parameter has been renamed
 to <em>volume_size</em></p></li>
@@ -277,8 +338,8 @@ to <em>volume_size</em></p></li>
 </ul>
 </div>
 </div>
-<div class="section" id="id8">
-<h3>0.1.1 (2019-09-12)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id18">
+<h3>0.1.1 (2019-09-12)<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Initial release</p></li>
 </ul>
@@ -291,27 +352,28 @@ to <em>volume_size</em></p></li>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="configuration.html" class="btn btn-neutral float-right" title="Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
+        <a href="configuration.html" class="btn btn-neutral float-right" title="Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018-2020, The Exoscale team
+        &#169; Copyright 2018-2021, The Exoscale team.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -319,7 +381,6 @@ to <em>volume_size</em></p></li>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
