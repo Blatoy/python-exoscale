@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>exoscale.api.compute module &mdash; python-exoscale 2021-04-21 documentation</title>
+  <title>exoscale.api.compute module &mdash; python-exoscale 2021-05-11 documentation</title>
   
 
   
@@ -68,7 +68,7 @@
             
             
               <div class="version">
-                2021-04-21
+                2021-05-11
               </div>
             
           
@@ -341,34 +341,43 @@ network interface</p></li>
 
 <dl class="py method">
 <dt id="exoscale.api.compute.ComputeAPI.create_instance_pool">
-<code class="sig-name descname"><span class="pre">create_instance_pool</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_volume_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_anti_affinity_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_security_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_private_networks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_ssh_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_user_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.create_instance_pool" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a Compute Instance Pool.</p>
+<code class="sig-name descname"><span class="pre">create_instance_pool</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_anti_affinity_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_deploy_target</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_elastic_ips</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_enable_ipv6</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pool'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_private_networks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_security_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_ssh_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_user_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_volume_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.create_instance_pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an Instance Pool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>zone</strong> (<a class="reference internal" href="#exoscale.api.compute.Zone" title="exoscale.api.compute.Zone"><em>Zone</em></a>) – the zone in which to create the Instance Pool</p></li>
 <li><p><strong>name</strong> (<em>str</em>) – the name of the Instance Pool</p></li>
-<li><p><strong>description</strong> (<em>str</em>) – a description of the Instance Pool</p></li>
-<li><p><strong>size</strong> (<em>int</em>) – the number of Compute instance members the pool must manage</p></li>
-<li><p><strong>instance_type</strong> (<a class="reference internal" href="#exoscale.api.compute.InstanceType" title="exoscale.api.compute.InstanceType"><em>InstanceType</em></a>) – the Compute instance members type</p></li>
+<li><p><strong>size</strong> (<em>int</em>) – the number of Compute instance members the Instance Pool must
+manage</p></li>
 <li><p><strong>instance_template</strong> (<a class="reference internal" href="#exoscale.api.compute.InstanceTemplate" title="exoscale.api.compute.InstanceTemplate"><em>InstanceTemplate</em></a>) – the Compute instance template to use
-for members</p></li>
-<li><p><strong>instance_volume_size</strong> (<em>int</em>) – the Compute instance members storage volume
-size in GB</p></li>
-<li><p><strong>instance_private_networks</strong> (<em>[</em><a class="reference internal" href="#exoscale.api.compute.PrivateNetwork" title="exoscale.api.compute.PrivateNetwork"><em>PrivateNetwork</em></a><em>]</em>) – a list of Private Networks to
-attach the Compute instance members to</p></li>
+when creating Compute instance members</p></li>
 <li><p><strong>instance_anti_affinity_groups</strong> (<em>[</em><a class="reference internal" href="#exoscale.api.compute.AntiAffinityGroup" title="exoscale.api.compute.AntiAffinityGroup"><em>AntiAffinityGroup</em></a><em>]</em>) – a list of Anti-Affinity
 Groups to attach the Compute instance members to</p></li>
+<li><p><strong>instance_deploy_target</strong> (<em>[</em><a class="reference internal" href="#exoscale.api.compute.DeployTarget" title="exoscale.api.compute.DeployTarget"><em>DeployTarget</em></a><em>]</em>) – a Deploy Target to deploy Compute
+instance members to</p></li>
+<li><p><strong>instance_elastic_ips</strong> (<em>[</em><a class="reference internal" href="#exoscale.api.compute.ElasticIP" title="exoscale.api.compute.ElasticIP"><em>ElasticIP</em></a><em>]</em>) – a list of Elastic IPs to attach the
+Compute instance members to</p></li>
+<li><p><strong>instance_enable_ipv6</strong> (<em>bool</em>) – a flag indicating whether IPv6 should be
+enabled when creating Compute instances</p></li>
+<li><p><strong>instance_prefix</strong> (<em>str</em>) – the string to prefix Compute instance members name
+with</p></li>
+<li><p><strong>instance_private_networks</strong> (<em>[</em><a class="reference internal" href="#exoscale.api.compute.PrivateNetwork" title="exoscale.api.compute.PrivateNetwork"><em>PrivateNetwork</em></a><em>]</em>) – a list of Private Networks to
+attach the Compute instance members to</p></li>
 <li><p><strong>instance_security_groups</strong> (<em>[</em><a class="reference internal" href="#exoscale.api.compute.SecurityGroup" title="exoscale.api.compute.SecurityGroup"><em>SecurityGroup</em></a><em>]</em>) – a list of Security Groups to
 attach the Compute instance members to</p></li>
 <li><p><strong>instance_ssh_key</strong> (<a class="reference internal" href="#exoscale.api.compute.SSHKey" title="exoscale.api.compute.SSHKey"><em>SSHKey</em></a>) – a SSH Key to deploy on the Compute instance
 members</p></li>
+<li><p><strong>instance_type</strong> (<a class="reference internal" href="#exoscale.api.compute.InstanceType" title="exoscale.api.compute.InstanceType"><em>InstanceType</em></a>) – the Compute instance members type</p></li>
 <li><p><strong>instance_user_data</strong> (<em>str</em>) – a cloud-init user data configuration to apply to
 the Compute instance members</p></li>
+<li><p><strong>instance_volume_size</strong> (<em>int</em>) – the Compute instance members storage volume size
+in GB</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – a description of the Instance Pool</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>the Compute Instance Pool created</p>
+<dd class="field-even"><p>the Instance Pool created</p>
 </dd>
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.InstancePool" title="exoscale.api.compute.InstancePool">InstancePool</a></p>
@@ -481,6 +490,26 @@ Private Networks</p></li>
 </dd></dl>
 
 <dl class="py method">
+<dt id="exoscale.api.compute.ComputeAPI.get_deploy_target">
+<code class="sig-name descname"><span class="pre">get_deploy_target</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.get_deploy_target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Deploy Target.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – a Deploy Target name</p></li>
+<li><p><strong>id</strong> (<em>str</em>) – a Deploy Target unique identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a Deploy Target</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.DeployTarget" title="exoscale.api.compute.DeployTarget">DeployTarget</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt id="exoscale.api.compute.ComputeAPI.get_elastic_ip">
 <code class="sig-name descname"><span class="pre">get_elastic_ip</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.get_elastic_ip" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve an Elastic IP.</p>
@@ -529,13 +558,14 @@ not an Elastic IP.</p>
 
 <dl class="py method">
 <dt id="exoscale.api.compute.ComputeAPI.get_instance_pool">
-<code class="sig-name descname"><span class="pre">get_instance_pool</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.get_instance_pool" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">get_instance_pool</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.get_instance_pool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get an Instance Pool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>zone</strong> (<a class="reference internal" href="#exoscale.api.compute.Zone" title="exoscale.api.compute.Zone"><em>Zone</em></a>) – the zone in which the Instance Pool is located in</p></li>
 <li><p><strong>id</strong> (<em>str</em>) – an Instance Pool identifier</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – an Instance Pool name</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -696,6 +726,20 @@ not an Elastic IP.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt id="exoscale.api.compute.ComputeAPI.list_deploy_targets">
+<code class="sig-name descname"><span class="pre">list_deploy_targets</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.list_deploy_targets" title="Permalink to this definition">¶</a></dt>
+<dd><p>List Deploy Targets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>zone</strong> (<a class="reference internal" href="#exoscale.api.compute.Zone" title="exoscale.api.compute.Zone"><em>Zone</em></a>) – the zone to list in</p>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>DeployTarget</em> – the next Deploy Target</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt id="exoscale.api.compute.ComputeAPI.list_elastic_ips">
 <code class="sig-name descname"><span class="pre">list_elastic_ips</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.list_elastic_ips" title="Permalink to this definition">¶</a></dt>
 <dd><p>List Elastic IPs.</p>
@@ -712,13 +756,13 @@ not an Elastic IP.</p>
 <dl class="py method">
 <dt id="exoscale.api.compute.ComputeAPI.list_instance_pools">
 <code class="sig-name descname"><span class="pre">list_instance_pools</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.ComputeAPI.list_instance_pools" title="Permalink to this definition">¶</a></dt>
-<dd><p>List Compute Instance Pools.</p>
+<dd><p>List Instance Pools.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>zone</strong> (<a class="reference internal" href="#exoscale.api.compute.Zone" title="exoscale.api.compute.Zone"><em>Zone</em></a>) – a zone to restrict results to</p>
 </dd>
 <dt class="field-even">Yields</dt>
-<dd class="field-even"><p><em>InstancePool</em> – the next Compute Instance Pool</p>
+<dd class="field-even"><p><em>InstancePool</em> – the next Instance Pool</p>
 </dd>
 </dl>
 </dd></dl>
@@ -944,6 +988,68 @@ Compute instance password reset</p>
 </dd>
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.SSHKey" title="exoscale.api.compute.SSHKey">SSHKey</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exoscale.api.compute.DeployTarget">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.compute.</span></code><code class="sig-name descname"><span class="pre">DeployTarget</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typ</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.DeployTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.Resource" title="exoscale.api.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.Resource</span></code></a></p>
+<p>A Deploy Target.</p>
+<dl class="py attribute">
+<dt id="exoscale.api.compute.DeployTarget.id">
+<code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#exoscale.api.compute.DeployTarget.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>the Deploy Target unique identifier</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.DeployTarget.zone">
+<code class="sig-name descname"><span class="pre">zone</span></code><a class="headerlink" href="#exoscale.api.compute.DeployTarget.zone" title="Permalink to this definition">¶</a></dt>
+<dd><p>the zone in which the Deploy Target is located</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.Zone" title="exoscale.api.compute.Zone">Zone</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.DeployTarget.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#exoscale.api.compute.DeployTarget.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>the Deploy Target name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.DeployTarget.description">
+<code class="sig-name descname"><span class="pre">description</span></code><a class="headerlink" href="#exoscale.api.compute.DeployTarget.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>the Deploy Target description</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.DeployTarget.typ">
+<code class="sig-name descname"><span class="pre">typ</span></code><a class="headerlink" href="#exoscale.api.compute.DeployTarget.typ" title="Permalink to this definition">¶</a></dt>
+<dd><p>the Deploy Target type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1709,9 +1815,20 @@ latency.</p>
 
 <dl class="py class">
 <dt id="exoscale.api.compute.InstancePool">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.compute.</span></code><code class="sig-name descname"><span class="pre">InstancePool</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">compute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_user_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_volume_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.InstancePool" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">exoscale.api.compute.</span></code><code class="sig-name descname"><span class="pre">InstancePool</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">compute</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_user_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_volume_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_deploy_target</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_ipv6_enabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pool'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_ssh_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.InstancePool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="exoscale.api.html#exoscale.api.Resource" title="exoscale.api.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">exoscale.api.Resource</span></code></a></p>
 <p>A Compute Instance Pool.</p>
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.description">
+<code class="sig-name descname"><span class="pre">description</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>the Instance Pool description</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt id="exoscale.api.compute.InstancePool.id">
 <code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.id" title="Permalink to this definition">¶</a></dt>
@@ -1719,6 +1836,101 @@ latency.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.instance_deploy_target">
+<code class="sig-name descname"><span class="pre">instance_deploy_target</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_deploy_target" title="Permalink to this definition">¶</a></dt>
+<dd><p>the Deploy Target used to create new
+Compute instances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.DeployTarget" title="exoscale.api.compute.DeployTarget">DeployTarget</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.instance_ipv6_enabled">
+<code class="sig-name descname"><span class="pre">instance_ipv6_enabled</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_ipv6_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>a flag indicating whether IPv6 is must be enabled
+when creating new Compute instances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.instance_prefix">
+<code class="sig-name descname"><span class="pre">instance_prefix</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>the prefix applied to created Compute instances name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.instance_ssh_key">
+<code class="sig-name descname"><span class="pre">instance_ssh_key</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_ssh_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>the SSH key to be deployed when creating new Compute
+instances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.SSHKey" title="exoscale.api.compute.SSHKey">SSHKey</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.instance_template">
+<code class="sig-name descname"><span class="pre">instance_template</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>the template to be used when this Instance
+Pool creates new instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.InstanceTemplate" title="exoscale.api.compute.InstanceTemplate">InstanceTemplate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.instance_type">
+<code class="sig-name descname"><span class="pre">instance_type</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>the type of instances managed by this Instance
+Pool</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.InstanceType" title="exoscale.api.compute.InstanceType">InstanceType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.instance_user_data">
+<code class="sig-name descname"><span class="pre">instance_user_data</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_user_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>The base64-encoded instances user data,
+when the Instance Pool creates new instances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.InstanceTemplate" title="exoscale.api.compute.InstanceTemplate">InstanceTemplate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exoscale.api.compute.InstancePool.instance_volume_size">
+<code class="sig-name descname"><span class="pre">instance_volume_size</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_volume_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>the storage volume capacity in bytes to set when
+this Instance Pool creates new instances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1735,28 +1947,6 @@ latency.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="exoscale.api.compute.InstancePool.description">
-<code class="sig-name descname"><span class="pre">description</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.description" title="Permalink to this definition">¶</a></dt>
-<dd><p>the Instance Pool description</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="exoscale.api.compute.InstancePool.zone">
-<code class="sig-name descname"><span class="pre">zone</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.zone" title="Permalink to this definition">¶</a></dt>
-<dd><p>the zone in which the Instance Pool is located</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.Zone" title="exoscale.api.compute.Zone">Zone</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
 <dt id="exoscale.api.compute.InstancePool.size">
 <code class="sig-name descname"><span class="pre">size</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.size" title="Permalink to this definition">¶</a></dt>
 <dd><p>the number of Compute instance members the Instance Pool manages</p>
@@ -1768,49 +1958,12 @@ latency.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="exoscale.api.compute.InstancePool.instance_type">
-<code class="sig-name descname"><span class="pre">instance_type</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_type" title="Permalink to this definition">¶</a></dt>
-<dd><p>the type of instances managed by this instance
-pool</p>
+<dt id="exoscale.api.compute.InstancePool.zone">
+<code class="sig-name descname"><span class="pre">zone</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.zone" title="Permalink to this definition">¶</a></dt>
+<dd><p>the zone in which the Instance Pool is located</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.InstanceType" title="exoscale.api.compute.InstanceType">InstanceType</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="exoscale.api.compute.InstancePool.instance_template">
-<code class="sig-name descname"><span class="pre">instance_template</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_template" title="Permalink to this definition">¶</a></dt>
-<dd><p>the template to be used when this instance
-pool creates new instances.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.InstanceTemplate" title="exoscale.api.compute.InstanceTemplate">InstanceTemplate</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="exoscale.api.compute.InstancePool.instance_user_data">
-<code class="sig-name descname"><span class="pre">instance_user_data</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_user_data" title="Permalink to this definition">¶</a></dt>
-<dd><p>The base64-encoded instances user
-data, when the Instance Pool creates new instances</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.InstanceTemplate" title="exoscale.api.compute.InstanceTemplate">InstanceTemplate</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="exoscale.api.compute.InstancePool.instance_volume_size">
-<code class="sig-name descname"><span class="pre">instance_volume_size</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.instance_volume_size" title="Permalink to this definition">¶</a></dt>
-<dd><p>the storage volume capacity in bytes to set when
-this Instance Pool creates new instances.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>int</p>
+<dd class="field-odd"><p><a class="reference internal" href="#exoscale.api.compute.Zone" title="exoscale.api.compute.Zone">Zone</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1833,11 +1986,42 @@ latency.</p>
 
 <dl class="py method">
 <dt id="exoscale.api.compute.InstancePool.delete">
-<code class="sig-name descname"><span class="pre">delete</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_poll</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.InstancePool.delete" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">delete</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.InstancePool.delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Delete the Instance Pool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exoscale.api.compute.InstancePool.elastic_ips">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">elastic_ips</span></code><a class="headerlink" href="#exoscale.api.compute.InstancePool.elastic_ips" title="Permalink to this definition">¶</a></dt>
+<dd><p>Elastic IP attached to the instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Yields</dt>
+<dd class="field-odd"><p><em>ElasticIP</em> – the next Elastic IP attached to the instances</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This property value is dynamically retrieved from the API, incurring extra
+latency.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exoscale.api.compute.InstancePool.evict">
+<code class="sig-name descname"><span class="pre">evict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.InstancePool.evict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evict members from the Instance Pool.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>instances</strong> (<em>[</em><a class="reference internal" href="#exoscale.api.compute.Instance" title="exoscale.api.compute.Instance"><em>Instance</em></a><em>]</em>) – the list of Compute instances to evict from the
+Instance Pool</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1878,9 +2062,13 @@ latency.</p>
 <dt id="exoscale.api.compute.InstancePool.scale">
 <code class="sig-name descname"><span class="pre">scale</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.InstancePool.scale" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scale the Instance Pool up or down.</p>
+<p>Note: in case of a scale-down you should use the evict() method, allowing you
+to specify which specific instance should be evicted from the Instance Pool
+rather than leaving the decision to the orchestrator.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – the number of Compute instance members the pool must manage</p>
+<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – the number of Compute instance members the Instance Pool must
+manage</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>None</p>
@@ -1925,7 +2113,7 @@ latency.</p>
 
 <dl class="py method">
 <dt id="exoscale.api.compute.InstancePool.update">
-<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_template</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_volume_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_user_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.InstancePool.update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_anti_affinity_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_deploy_target</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_elastic_ips</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_enable_ipv6</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_private_networks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_security_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_ssh_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_template</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_user_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_volume_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exoscale.api.compute.InstancePool.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update the Instance Pool properties.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
